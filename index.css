@@ -272,6 +272,9 @@ footer .footer__linkicon {
 footer .footer__link__a {
   color: #fff;
 }
+footer .fa-solid {
+  color: #fff;
+}
 
 .header {
   display: flex;
@@ -318,6 +321,9 @@ nav .nav__localisation {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+nav .fa-solid {
+  color: #353535;
 }
 
 .recherche {
