@@ -5,7 +5,7 @@
     position: relative;
     font-size: 25px;
     &::before {
-      background: black;
+      background: $color-black;
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -15,6 +15,53 @@
     }
   }
   .restaurants__likehover {
+    position: absolute;
+    opacity: 0;
+    &::before {
+      font-size: 25px;
+      background: -webkit-linear-gradient(
+        90deg,
+        $color-primary,
+        $color-secondary
+      );
+      transition: 250ms;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &:hover {
+      font-size: 25px;
+      background: -webkit-linear-gradient(
+        90deg,
+        $color-primary,
+        $color-secondary
+      );
+      transition: 250ms;
+      opacity: 1;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+.menu__cardlike {
+  display: flex;
+  align-items: center;
+  .menu__like {
+    position: relative;
+    font-size: 25px;
+    &::before {
+      background: $color-black;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &:hover {
+      opacity: 0;
+    }
+  }
+  .menu__likehover {
     position: absolute;
     opacity: 0;
     &::before {
