@@ -139,45 +139,6 @@ body {
   color: transparent;
 }
 
-.menu__cardlike {
-  display: flex;
-  align-items: center;
-}
-.menu__cardlike .menu__like {
-  position: relative;
-  font-size: 25px;
-}
-.menu__cardlike .menu__like::before {
-  background: #000;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.menu__cardlike .menu__like:hover {
-  opacity: 0;
-}
-.menu__cardlike .menu__likehover {
-  position: absolute;
-  opacity: 0;
-}
-.menu__cardlike .menu__likehover::before {
-  font-size: 25px;
-  background: -webkit-linear-gradient(90deg, #9356dc, #ff79da);
-  transition: 250ms;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.menu__cardlike .menu__likehover:hover {
-  font-size: 25px;
-  background: -webkit-linear-gradient(90deg, #9356dc, #ff79da);
-  transition: 250ms;
-  opacity: 1;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 .recherche__button {
   font-family: "Roboto";
   font-weight: 500;
@@ -582,7 +543,7 @@ nav .fa-solid {
   left: 0;
   top: 24px;
 }
-.menu .menu__platcard {
+.menu .menu__mealcard {
   display: flex;
   justify-content: space-between;
   border-radius: 15.043px;
@@ -597,11 +558,11 @@ nav .fa-solid {
   -webkit-animation: menu-listes 1s ease both;
   animation: menu-listes 1s ease both;
 }
-.menu .menu__platcard:hover .menu__cardorder {
+.menu .menu__mealcard:hover .menu__cardorder {
   transform: translateX(0px);
   transition: 0.5s ease-in-out;
 }
-.menu .menu__platcard:hover .menu__cardprice {
+.menu .menu__mealcard:hover .menu__cardprice {
   margin-right: 60px;
 }
 .menu .menu__cardcontent {
@@ -650,7 +611,7 @@ nav .fa-solid {
   opacity: 1;
 }
 
-.Commander {
+.order {
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -662,27 +623,27 @@ nav .fa-solid {
   line-height: normal;
 }
 
-.menu__platcard:nth-child(1) {
+.menu__mealcard:nth-child(1) {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-.menu__platcard:nth-child(2) {
+.menu__mealcard:nth-child(2) {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-.menu__platcard:nth-child(3) {
+.menu__mealcard:nth-child(3) {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-.menu__platcard:nth-child(4) {
+.menu__mealcard:nth-child(4) {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
 
-.menu__platcard:nth-child(5) {
+.menu__mealcard:nth-child(5) {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
