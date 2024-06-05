@@ -1,3 +1,12 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateX(2.5rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(2.5rem) rotate(-360deg);
+  }
+}
+
 @keyframes loader {
   100% {
     opacity: 0;
@@ -11,21 +20,6 @@
   }
   100% {
     transform: scale(1);
-  }
-}
-
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0.5rem);
-  }
-  75% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 
